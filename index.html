@@ -8,18 +8,53 @@
 
         #calculator{
             width: 400px;
-            height: 300px;
+            height: 500px;
             border: 1px solid  black;
             padding: 10px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: lightslategray;
         }
 
         #buttons{
             display: grid;
             grid-template-columns: repeat(4,1fr);
             gap: 10px;
+            position: relative;
+            top: 40px;
         }
+
+        #buttons input[type="button"] {
+            width: 100%;
+            padding: 20px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #buttons input[type="button"]:hover {
+            background-color: #d0d0d0;
+            transform: scale(1.05);
+        }
+
+        #buttons input[type="button"]:active {
+            background-color: #c0c0c0;
+        }
+
+        #name{
+            width: 380px;
+            height: 50px;
+            position: relative;
+            left: 10px;
+        }
+
 
     </style>
 
@@ -29,7 +64,7 @@
 
 <div id="calculator">
 
-    <input type="text" name="display">
+    <input type="text" name="display" id="name">
 
     <div id="buttons">
         <input type="button" value="7">
