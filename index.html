@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Calculator</title>
+
+    <style>
+
+        #calculator{
+            width: 400px;
+            height: 300px;
+            border: 1px solid  black;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #buttons{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+        }
+
+    </style>
+
 </head>
 <body>
+
+
+<div id="calculator">
+
+    <input type="text" name="display">
+
+    <div id="buttons">
+        <input type="button" value="7">
+        <input type="button" value="8">
+        <input type="button" value="9">
+        <input type="button" value="+">
+        <input type="button" value="4">
+        <input type="button" value="5">
+        <input type="button" value="6">
+        <input type="button" value="-">
+        <input type="button" value="1">
+        <input type="button" value="2">
+        <input type="button" value="3">
+        <input type="button" value="/">
+        <input type="button" value="0">
+        <input type="button" value=".">
+        <input type="button" value="=">
+        <input type="button" value="*">
+        <input type="button" value="C">
+
+    </div>
+
+</div>
+
 
 </body>
 </html>
